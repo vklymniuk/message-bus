@@ -1,0 +1,20 @@
+image:
+  name: $NODE_IMAGE
+  entrypoint: ['']
+
+include: 'http://gitlab-service.mt.ec2-internal/public-group/gitlab-shared-pipelines/raw/master/gitlab-npm-publish-job.yml'
+
+stages:
+- install
+- publish
+
+install:
+  stage: install
+  script:
+  - echo cafile="/usr/local/share/ca-certificates/mt_ca.crt" >> .npmrc
+  - npm install
+  cache:
+    paths:
+    - node_modules/
+  only:
+  - master
