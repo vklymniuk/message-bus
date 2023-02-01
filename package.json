@@ -1,0 +1,33 @@
+{
+  "name": "message-bus",
+  "version": "0.0.1",
+  "description": "ManageTeam MessageBus integration",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vklymniuk/message-bus.git"
+  },
+  "author": "Vladimir Klymniuk <Vladimir.Klymniuk@gmail.com>",
+  "license": "MIT-advertising",
+  "bugs": {
+    "url": "https://github.com/vklymniuk/message-bus/issues"
+  },
+  "homepage": "https://github.com/vklymniuk/message-bus#readme",
+  "dependencies": {
+    "amqp-connection-manager": "^4.1.10",
+    "amqplib": "^0.10.3"
+  },
+  "devDependencies": {
+    "semantic-release": "^20.1.0"
+  }
+}
