@@ -1,0 +1,1 @@
+module.exports = require("@vklymniuk/semantic-release-config");
