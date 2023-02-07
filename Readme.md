@@ -52,17 +52,19 @@ if you want to handle several messages you can set
         auto_delete: false,
         type: 'direct'
       },
+    }
+  }
 ```
 
 
 Configure Message Bus
 
 ```
-vklymniuk-console message-bus:setup
+  vklymniuk-console message-bus:setup
 ```
 
 Consume for the new messages
 
 ```
-vklymniuk-console message-bus:consume <name>
+  vklymniuk-console message-bus:consume <name>
 ```
