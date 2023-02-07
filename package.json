@@ -28,6 +28,7 @@
     "amqplib": "^0.10.3"
   },
   "devDependencies": {
+    "@vklymniuk/semantic-release-config": "^0.0.1",
     "semantic-release": "^20.1.0"
   }
 }
